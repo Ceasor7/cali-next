@@ -42,17 +42,19 @@ const programDescriptions: ProgramDescription[] = [
 
 const OurPrograms = () => {
   return (
-    <div>
+    <div className=" px-4">
       <div>
-        <h3>Our Programs</h3>
-        <p>
+        <h2 className="text-4xl text-center font-bold">
+          Our <span className="text-[#cd2d00]"> Programs </span>
+        </h2>
+        <p className=" py-5 text-center xl:max-w-[500px] mx-auto">
           CALI offers several programs to support the development of the arts
           sector in Kenya. These programs include training workshops, leadership
           development programs, mentorship and coaching, advocacy and
           awareness-raising initiatives, and a research program.
         </p>
       </div>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center max-w-7xl mx-auto">
         {programDescriptions.map((program, index) => (
           <OurProgramsCard
             key={index}

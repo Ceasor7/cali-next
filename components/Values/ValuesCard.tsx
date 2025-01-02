@@ -6,8 +6,8 @@ type Props = {
 
 const ValuesCard = ({ coreTitle }: Props) => {
   return (
-    <div className=" rounded-md shadow-md">
-      <p>{coreTitle}</p>
+    <div className=" rounded-md shadow-md max-w-60 mx-auto p-10">
+      <p className=" text-center">{coreTitle}</p>
     </div>
   );
 };

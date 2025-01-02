@@ -22,14 +22,14 @@ const Footer = () => {
             />
           </div>
           <div>
-            <p className=" text-white">
+            <p className=" text-white px-4 text-center py-2">
               Thank you for considering CALI as your partner in creative arts
               leadership development. We look forward to working with you to
               help you achieve your leadership goals and make a positive impact
               on the world.
             </p>
           </div>
-          <div className=" flex flex-row gap-2">
+          <div className=" flex items-center justify-center flex-row gap-2">
             <FaFacebookSquare color="red" size={40} />
             <FaInstagramSquare color="red" size={40} />
             <FaSquareXTwitter color="red" size={40} />

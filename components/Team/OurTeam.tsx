@@ -94,7 +94,7 @@ const OurTeam = () => {
   };
 
   return (
-    <div>
+    <div className=" py-7">
       <h2 className="text-4xl text-center font-bold">
         Our <span className="text-[#cd2d00]"> Team </span>
       </h2>
