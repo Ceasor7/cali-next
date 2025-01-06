@@ -3,7 +3,7 @@ import React from "react";
 
 const Description = () => {
   return (
-    <div className=" py-16 justify-center items-center">
+    <div className=" justify-center items-center">
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-3 max-w-5xl mx-auto">
         <div className=" flex justify-center items-center">
           <Image
