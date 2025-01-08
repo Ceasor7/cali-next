@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
@@ -10,11 +11,10 @@ type Props = {
 };
 
 const links = [
-  { path: "/", name: "home" },
-  { path: "/about-festival", name: "about the festival" },
-  { path: "/our-team", name: "our team" },
-  { path: "/dashboard", name: "dashboard" },
-  { path: "/contact", name: "contact" },
+  { path: "#home", name: "home" },
+  { path: "#programs", name: "programs" },
+  { path: "#team", name: "our team" },
+  { path: "/contact", name: "contact us" },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underLineStyles }: Props) => {
@@ -27,7 +27,7 @@ const Nav = ({ containerStyles, linkStyles, underLineStyles }: Props) => {
           key={index}
           className={`capitalize ${linkStyles}`}
         >
-          {link.path === path && (
+          {link.path === `#${path}` && (
             <motion.span
               initial={{ y: "-100%" }}
               animate={{ y: 0 }}

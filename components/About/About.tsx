@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import AboutCard from "./AboutCard";
+import { motion } from "framer-motion";
 
 type AboutDescription = {
   imgPath: string;
@@ -24,18 +26,22 @@ const aboutDescriptions: AboutDescription[] = [
 
 const About = () => {
   return (
-    <div>
-      <div>
-        <h2>About Us</h2>
-      </div>
-      <div>
+    <div className="bg-[#cd7e01] py-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl gap-5 mx-auto">
         {aboutDescriptions.map((about, index) => (
-          <AboutCard
+          <motion.div
             key={index}
-            imgPath={about.imgPath}
-            aboutTitle={about.aboutTitle}
-            aboutDescription={about.aboutDescription}
-          />
+            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <AboutCard
+              imgPath={about.imgPath}
+              aboutTitle={about.aboutTitle}
+              aboutDescription={about.aboutDescription}
+            />
+          </motion.div>
         ))}
       </div>
     </div>

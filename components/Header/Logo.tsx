@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <div className=" cursor-pointer">
       <Link href="/">
-        <Image src="/logoff.svg" alt="CALI logo" width={180} height={150} />
+        <Image src="/logoff.svg" alt="CALI logo" width={220} height={190} />
       </Link>
     </div>
   );

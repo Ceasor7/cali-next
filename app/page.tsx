@@ -7,23 +7,23 @@ import Values from "@/components/Values/Values";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
-      <section>
+    <div className="font-[family-name:var(--font-montserrat)]">
+      <section id="home">
         <LandingPage />
       </section>
-      <section>
+      <section id="description">
         <Description />
       </section>
-      <section>
+      <section id="about" className="py-6">
         <About />
       </section>
-      <section>
+      <section id="values">
         <Values />
       </section>
-      <section>
+      <section id="programs">
         <OurPrograms />
       </section>
-      <section>
+      <section id="team">
         <OurTeam />
       </section>
     </div>

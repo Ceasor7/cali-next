@@ -66,7 +66,7 @@ const CarouselComponent: React.FC = () => {
       }}
       plugins={[
         Autoplay({
-          delay: 3000,
+          delay: 4000,
         }),
       ]}
     >
@@ -77,7 +77,9 @@ const CarouselComponent: React.FC = () => {
               {/* Text Section */}
               <div className="flex-1">
                 <div className="p-6 space-y-4">
-                  <h2 className="text-4xl font-bold">{event.title}</h2>
+                  <h2 className="text-4xl text-[#cd2d00] font-bold">
+                    {event.title}
+                  </h2>
                   <p>{event.description}</p>
                   <Button>Learn More</Button>
                 </div>

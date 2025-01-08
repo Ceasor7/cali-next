@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import OurProgramsCard from "./OurProgramsCard";
+import { motion } from "framer-motion";
 
 type ProgramDescription = {
   imgPath: string;
@@ -38,16 +40,22 @@ const programDescriptions: ProgramDescription[] = [
     programDescription:
       "CALI offers mentorship and coaching to support artists in achieving their goals, addressing challenges, and growing their careers.",
   },
+  {
+    imgPath: "/programs/mentorship.jpg",
+    programTitle: "Publications",
+    programDescription:
+      "At CALI, we are proud to offer a diverse range of publications designed to support the Competency-Based Curriculum (CBC) and promote the creative arts in Kenya. ",
+  },
 ];
 
 const OurPrograms = () => {
   return (
-    <div className=" px-4">
+    <div className="px-4 bg-[#1e1e1e] py-8">
       <div>
-        <h2 className="text-4xl text-center font-bold">
-          Our <span className="text-[#cd2d00]"> Programs </span>
+        <h2 className="text-4xl text-white text-center font-bold">
+          Our Programs
         </h2>
-        <p className=" py-5 text-center xl:max-w-[500px] mx-auto">
+        <p className="py-5 text-center text-white xl:max-w-[500px] mx-auto">
           CALI offers several programs to support the development of the arts
           sector in Kenya. These programs include training workshops, leadership
           development programs, mentorship and coaching, advocacy and
@@ -56,12 +64,23 @@ const OurPrograms = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center max-w-7xl mx-auto">
         {programDescriptions.map((program, index) => (
-          <OurProgramsCard
+          <motion.div
             key={index}
-            imgPath={program.imgPath}
-            programTitle={program.programTitle}
-            programDescription={program.programDescription}
-          />
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.2,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <OurProgramsCard
+              imgPath={program.imgPath}
+              programTitle={program.programTitle}
+              programDescription={program.programDescription}
+            />
+          </motion.div>
         ))}
       </div>
     </div>

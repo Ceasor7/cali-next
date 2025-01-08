@@ -14,19 +14,21 @@ const OurProgramsCard = ({
   programDescription,
 }: Props) => {
   return (
-    <Card>
+    <Card className=" md:h-[450px] bg-[#1e1e1e] outline-none">
       <CardHeader className="flex flex-col items-center p-4 ">
         <Image
           src={imgPath}
           alt={programTitle}
-          width={280}
-          height={160}
+          width={340}
+          height={220}
           className=" rounded-md shadow-md "
         />
-        <h2 className="text-xl font-semibold">{programTitle}</h2>
+        <h2 className="text-xl font-semibold text-white uppercase">
+          {programTitle}
+        </h2>
       </CardHeader>
       <CardContent>
-        <p>{programDescription}</p>
+        <p className=" text-white text-center">{programDescription}</p>
       </CardContent>
     </Card>
   );
