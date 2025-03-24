@@ -11,21 +11,21 @@ type Props = {
 };
 
 const links = [
-  { path: "#home", name: "home" },
-  { path: "#programs", name: "programs" },
-  { path: "#team", name: "our team" },
+  { path: "/#home", name: "home" },
+  { path: "/#programs", name: "programs" },
+  { path: "/#team", name: "our team" },
   { path: "/contact", name: "contact us" },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underLineStyles }: Props) => {
   const path = usePathname();
   return (
-    <nav className={containerStyles}>
+    <nav className={`${containerStyles} flex space-x-6 sm:space-x-10`}>
       {links.map((link, index) => (
         <Link
           href={link.path}
           key={index}
-          className={`capitalize ${linkStyles}`}
+          className={`relative capitalize ${linkStyles} hover:text-primary transition-all`}
         >
           {link.path === `#${path}` && (
             <motion.span
@@ -37,6 +37,7 @@ const Nav = ({ containerStyles, linkStyles, underLineStyles }: Props) => {
             />
           )}
           {link.name}
+          <span className="absolute left-0 top-full w-0 h-[2px] bg-primary transition-all duration-300 hover:w-full" />
         </Link>
       ))}
     </nav>

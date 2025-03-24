@@ -11,7 +11,7 @@ type Props = {
 const OurTeamCard = ({ imgPath, teamName, teamTitle }: Props) => {
   return (
     <Card>
-      <CardHeader className="flex flex-col items-center p-4 ">
+      <CardHeader className="flex flex-col items-center h-[350px] ">
         <Image
           src={imgPath}
           alt={teamName}
@@ -19,7 +19,7 @@ const OurTeamCard = ({ imgPath, teamName, teamTitle }: Props) => {
           height={160}
           className=" rounded-md mb-4"
         />
-        <h2 className="text-xl font-semibold">{teamName}</h2>
+        <h2 className="text-xl text-center font-semibold">{teamName}</h2>
         <CardDescription>{teamTitle}</CardDescription>
       </CardHeader>
     </Card>

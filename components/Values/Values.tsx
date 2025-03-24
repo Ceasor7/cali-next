@@ -27,17 +27,17 @@ const Values = () => {
           {coreDescriptions.map((core, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // Slide from left for even indices, right for odd
-              whileInView={{ opacity: 1, x: 0 }} // Animate to visible position
-              transition={{ duration: 0.8, ease: "easeOut" }} // Smooth animation
-              viewport={{ once: true, amount: 0.2 }} // Trigger when in viewport
+              initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <ValuesCard coreTitle={core.coreTitle} />
             </motion.div>
           ))}
         </div>
         <div>
-          <p className="pt-5 container mx-auto px-4 text-wrap">
+          <p className="pt-5 container mx-auto px-4 text-center">
             We strive for excellence in all aspects of our work, encouraging and
             supporting creative thinking and innovation. We promote diversity,
             equity, and inclusion in the arts, creating a welcoming and

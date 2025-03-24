@@ -3,23 +3,22 @@ import React from "react";
 
 const Description = () => {
   return (
-    <div className=" py-5">
-      <div>
-        <h2 className="text-4xl text-center font-bold pb-6">
-          About <span className="text-[#cd2d00]"> Us </span>
-        </h2>
-      </div>
-      <div className=" justify-center items-center">
-        <div className=" flex flex-col md:flex-row max-w-7xl mx-auto">
-          <div className=" flex justify-center md:w-1/2 items-center">
+    <div className="py-12">
+      <h2 className="text-4xl text-center font-bold pb-3">
+        About <span className="text-[#cd2d00]">Us</span>
+      </h2>
+      <div className=" flex items-center justify-center">
+        <div className="max-w-5xl shadow-2xl p-12 rounded-lg flex flex-col md:flex-row items-center gap-8">
+          <div className="w-full md:w-1/2">
             <Image
-              src="/programs/mentorship.jpg"
-              alt="About CALI"
-              height={300}
-              width={350}
+              src="/degree14.svg"
+              width={500}
+              height={500}
+              alt="Picture of the author"
             />
           </div>
-          <div className=" px-3 md:w-1/2">
+
+          <div className="w-full md:w-1/2 text-center md:text-left">
             <p>
               CALI is a non-profit organization that focuses on promoting arts
               management in the country. It provides research, training,

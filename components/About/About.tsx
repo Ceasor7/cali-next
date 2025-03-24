@@ -26,7 +26,7 @@ const aboutDescriptions: AboutDescription[] = [
 
 const About = () => {
   return (
-    <div className="bg-[#cd7e01] py-5">
+    <div className="bg-[#cd7e01] py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl gap-5 mx-auto">
         {aboutDescriptions.map((about, index) => (
           <motion.div

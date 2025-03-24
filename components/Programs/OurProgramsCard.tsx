@@ -14,7 +14,7 @@ const OurProgramsCard = ({
   programDescription,
 }: Props) => {
   return (
-    <Card className=" md:h-[450px] bg-[#1e1e1e] outline-none">
+    <Card className=" md:h-[450px] bg-[#1e1e1e] outline-none cursor-pointer">
       <CardHeader className="flex flex-col items-center p-4 ">
         <Image
           src={imgPath}

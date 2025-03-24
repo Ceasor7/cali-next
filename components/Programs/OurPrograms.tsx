@@ -50,10 +50,10 @@ const programDescriptions: ProgramDescription[] = [
 
 const OurPrograms = () => {
   return (
-    <div className="px-4 bg-[#1e1e1e] py-8">
+    <div className="px-4 bg-[#1e1e1e] py-16">
       <div>
-        <h2 className="text-4xl text-white text-center font-bold">
-          Our Programs
+        <h2 className="text-4xl text-white text-center py-5 font-bold">
+          Our <span className="text-[#cd2d00]"> Programs </span>
         </h2>
         <p className="py-5 text-center text-white xl:max-w-[500px] mx-auto">
           CALI offers several programs to support the development of the arts
@@ -64,7 +64,7 @@ const OurPrograms = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center max-w-7xl mx-auto">
         {programDescriptions.map((program, index) => (
-          <motion.div
+          <motion.a
             key={index}
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ const OurPrograms = () => {
               programTitle={program.programTitle}
               programDescription={program.programDescription}
             />
-          </motion.div>
+          </motion.a>
         ))}
       </div>
     </div>

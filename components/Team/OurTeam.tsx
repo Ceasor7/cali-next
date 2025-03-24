@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import OurTeamCard from "./OurTeamCard";
 import {
   FaFacebook,
-  FaTwitter,
   FaLinkedin,
   FaTimes,
   FaInstagramSquare,
 } from "react-icons/fa";
 import { Button } from "../ui/button";
+import { FaXTwitter } from "react-icons/fa6";
 
 type TeamMember = {
   imgPath: string;
@@ -94,8 +94,8 @@ const OurTeam = () => {
   };
 
   return (
-    <div className=" py-7 max-w-7xl mx-auto">
-      <h2 className="text-4xl text-center mb-3 font-bold">
+    <div className=" py-16 max-w-7xl mx-auto">
+      <h2 className="text-4xl text-center py-5 font-bold">
         Our <span className="text-[#cd2d00]"> Team </span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-center justify-center">
@@ -133,10 +133,8 @@ const OurTeam = () => {
               <h2 className="text-2xl font-bold mb-4">
                 {selectedMember.teamName}
               </h2>
-              <h3 className="text-xl text-gray-700 mb-4">
-                {selectedMember.teamTitle}
-              </h3>
-              <p className="text-gray-600 mb-6">{selectedMember.description}</p>
+              <h3 className="text-xl mb-4">{selectedMember.teamTitle}</h3>
+              <p className=" mb-6">{selectedMember.description}</p>
               <div className="flex space-x-4">
                 {selectedMember.socialLinks.facebook && (
                   <a
@@ -153,9 +151,8 @@ const OurTeam = () => {
                     href={selectedMember.socialLinks.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400"
                   >
-                    <FaTwitter size={24} />
+                    <FaXTwitter size={24} />
                   </a>
                 )}
                 {selectedMember.socialLinks.linkedin && (
@@ -173,7 +170,7 @@ const OurTeam = () => {
                     href={selectedMember.socialLinks.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-red-200"
+                    className="text-red-600"
                   >
                     <FaInstagramSquare size={24} />
                   </a>
