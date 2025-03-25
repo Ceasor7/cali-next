@@ -9,7 +9,7 @@ export default function LeadershipPage() {
     >
       <div className="space-y-4">
         <p>
-          CALI`&apos;`s leadership development programs are dedicated to
+          CALI&apos;s leadership development programs are dedicated to
           empowering both emerging and established creative arts leaders. Our
           initiatives are designed to enhance their skills and knowledge, deepen
           their understanding of the creative arts sector and foster valuable

@@ -9,7 +9,7 @@ export default function MentorshipPage() {
     >
       <div className="space-y-4">
         <p>
-          CALI`&apos;`s mentorship and coaching programs are designed to support
+          CALI&apos;s mentorship and coaching programs are designed to support
           emerging creative arts leaders by pairing them with experienced
           mentors from the creative arts sector. Through one-on-one guidance and
           support these programs aim to help emerging leaders develop their

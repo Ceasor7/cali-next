@@ -9,7 +9,7 @@ export default function AdvocacyPage() {
     >
       <div className="space-y-4">
         <p>
-          CALI`&apos;`s advocacy and awareness-raising initiatives are dedicated
+          CALI&apos;s advocacy and awareness-raising initiatives are dedicated
           to elevating the importance of creative arts and culture in Kenya. Our
           programs aim to increase public awareness about the vital role of the
           creative arts, advocate for supportive policies and funding, foster
