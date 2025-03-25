@@ -23,7 +23,7 @@ const OurProgramsCard = ({
   href,
 }: Props) => {
   return (
-    <Card className="md:h-[450px] bg-[#1e1e1e] outline-none flex flex-col group">
+    <Card className="md:h-[480px] bg-[#1e1e1e] outline-none flex flex-col group">
       <Link href={href} passHref legacyBehavior>
         <a className="flex flex-col flex-grow">
           <CardHeader className="flex flex-col items-center p-4">
