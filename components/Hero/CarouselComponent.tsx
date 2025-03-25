@@ -74,17 +74,16 @@ const CarouselComponent: React.FC = () => {
         {events.map((event, index) => (
           <CarouselItem key={index}>
             <div className="flex flex-col md:flex-row gap-4 items-center p-4">
-              {/* Text Section */}
               <div className="flex-1">
                 <div className="p-6 space-y-4">
                   <h2 className="text-4xl text-[#cd2d00] font-bold">
                     {event.title}
                   </h2>
                   <p>{event.description}</p>
-                  <Button>Learn More</Button>
+                  <Button className="hover:bg-[#cc2c00]">Learn More</Button>
                 </div>
               </div>
-              {/* Image Section */}
+
               <div className="flex-shrink-0">
                 <Image
                   src={event.image}

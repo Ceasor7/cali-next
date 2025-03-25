@@ -40,23 +40,20 @@ const SiteHeader = () => {
     >
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <Logo />
 
-          {/* Navigation Menu */}
           <nav
             className={`${
               menuOpen ? "block" : "hidden"
-            } sm:flex absolute sm:static top-full left-0 w-full sm:w-auto sm:gap-x-8 bg-white sm:bg-transparent shadow-lg sm:shadow-none p-4 sm:p-0`}
+            } sm:flex absolute  sm:static top-full left-0 w-full sm:w-auto sm:gap-x-8 bg-white sm:bg-transparent shadow-lg sm:shadow-none p-4 sm:p-0`}
           >
             <Nav
-              containerStyles="flex flex-col sm:flex-row sm:space-x-4 gap-y-4 sm:gap-y-0"
+              containerStyles="flex flex-col font-[family-name:var(--font-montserrat)] sm:flex-row sm:space-x-7 gap-y-4 sm:gap-y-0"
               linkStyles="relative hover:text-primary transition-all"
               underLineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
             />
           </nav>
 
-          {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="sm:hidden text-2xl focus:outline-none"

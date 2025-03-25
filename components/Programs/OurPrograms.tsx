@@ -7,6 +7,7 @@ type ProgramDescription = {
   imgPath: string;
   programTitle: string;
   programDescription: string;
+  href: string;
 };
 
 const programDescriptions: ProgramDescription[] = [
@@ -14,37 +15,43 @@ const programDescriptions: ProgramDescription[] = [
     imgPath: "/programs/advocacy.jpg",
     programTitle: "Advocacy",
     programDescription:
-      "CALI's advocacy and awareness-raising initiatives aim to raise public awareness of the importance of the arts and culture in Kenya, advocate for policies and funding that support the arts, and build partnerships and collaborations across sectors to support the growth and development of the arts sector.",
+      "CALI's advocacy and awareness-raising initiatives aim to raise public awareness of the importance of the arts and culture in Kenya...",
+    href: "/programs/advocacy",
   },
   {
     imgPath: "/programs/training.jpg",
     programTitle: "Training Workshops",
     programDescription:
-      "CALI provides training workshops for artists and cultural practitioners to enhance their skills, knowledge, and capacity to succeed in the arts sector.",
+      "CALI provides training workshops for artists and cultural practitioners to enhance their skills...",
+    href: "/programs/training",
   },
   {
     imgPath: "/programs/leadership.jpg",
     programTitle: "Leadership Development",
     programDescription:
-      "CALI’s leadership programs aim to nurture and empower future leaders in the arts sector through mentorship, coaching, and networking opportunities.",
+      "CALI's leadership programs aim to nurture and empower future leaders in the arts sector...",
+    href: "/programs/leadership",
   },
   {
     imgPath: "/programs/research.jpg",
     programTitle: "Research",
     programDescription:
-      "Our research program aims to gather and analyze data on the arts sector in Kenya, providing insights and information to inform policies and practices.",
+      "Our research program aims to gather and analyze data on the arts sector in Kenya...",
+    href: "/programs/research",
   },
   {
     imgPath: "/programs/mentorship.jpg",
     programTitle: "Mentorship & Coaching",
     programDescription:
-      "CALI offers mentorship and coaching to support artists in achieving their goals, addressing challenges, and growing their careers.",
+      "CALI offers mentorship and coaching to support artists in achieving their goals...",
+    href: "/programs/mentorship",
   },
   {
     imgPath: "/programs/mentorship.jpg",
     programTitle: "Publications",
     programDescription:
-      "At CALI, we are proud to offer a diverse range of publications designed to support the Competency-Based Curriculum (CBC) and promote the creative arts in Kenya. ",
+      "At CALI, we are proud to offer a diverse range of publications designed to support...",
+    href: "/programs/publications",
   },
 ];
 
@@ -64,7 +71,7 @@ const OurPrograms = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center max-w-7xl mx-auto">
         {programDescriptions.map((program, index) => (
-          <motion.a
+          <motion.div
             key={index}
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -79,8 +86,9 @@ const OurPrograms = () => {
               imgPath={program.imgPath}
               programTitle={program.programTitle}
               programDescription={program.programDescription}
+              href={program.href}
             />
-          </motion.a>
+          </motion.div>
         ))}
       </div>
     </div>

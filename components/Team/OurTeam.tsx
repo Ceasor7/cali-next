@@ -108,7 +108,7 @@ const OurTeam = () => {
             />
             <Button
               onClick={() => openModal(member)}
-              className="mt-2 mx-auto flex justify-center items-center"
+              className="mt-2 mx-auto hover:bg-[#cc2c00] flex justify-center items-center"
             >
               Show More
             </Button>

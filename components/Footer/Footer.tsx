@@ -34,7 +34,7 @@ const Footer = () => {
               on the world.
             </p>
           </div>
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex items-center justify-center gap-2">
             <a
               href="https://www.facebook.com/profile.php?id=61552732195123"
               target="_blank"
