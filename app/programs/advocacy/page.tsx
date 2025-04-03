@@ -7,7 +7,7 @@ export default function AdvocacyPage() {
       titleSpan="- raising initiatives  "
       imageSrc="/programs/advocacy.jpg"
     >
-      <div className="space-y-4">
+      <div className="space-y-5">
         <p>
           CALI&apos;s advocacy and awareness-raising initiatives are dedicated
           to elevating the importance of creative arts and culture in Kenya. Our
@@ -16,6 +16,7 @@ export default function AdvocacyPage() {
           partnerships and collaborations across various sectors to enhance the
           growth and development of the creative arts sector.
         </p>
+        <hr />
         <p>
           We actively engage in campaigns that highlight the cultural, social
           and economic benefits of the creative arts, emphasizing how a vibrant
@@ -24,6 +25,7 @@ export default function AdvocacyPage() {
           we strive to educate the public and policymakers about the value of
           investing in the creative arts sector.
         </p>
+        <hr />
         <p>
           Our advocacy efforts include working closely with government bodies,
           non-profit organizations and private sector partners to influence
@@ -33,6 +35,7 @@ export default function AdvocacyPage() {
           and compelling arguments, we aim to shape a favorable environment for
           the creative arts to thrive.
         </p>
+        <hr />
         <p>
           Building partnerships is a cornerstone of our advocacy strategy. We
           collaborate with educational institutions, businesses and
@@ -40,6 +43,7 @@ export default function AdvocacyPage() {
           the creative arts. These partnerships enable us to launch joint
           initiatives, share resources and amplify our impact.
         </p>
+        <hr />
         <p>
           At CALI, we are committed to ensuring that the creative arts receive
           the recognition and support they deserve. Through our advocacy and
@@ -47,6 +51,7 @@ export default function AdvocacyPage() {
           dynamic creative arts ecosystem in Kenya that benefits all members of
           society.
         </p>
+        <hr />
       </div>
     </PageLayout>
   );

@@ -3,7 +3,7 @@ import React from "react";
 
 const Description = () => {
   return (
-    <div className="py-12">
+    <div className=" py-24">
       <h2 className="text-4xl text-center font-bold pb-3">
         About <span className="text-[#cd2d00]">Us</span>
       </h2>

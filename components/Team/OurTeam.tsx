@@ -94,7 +94,7 @@ const OurTeam = () => {
   };
 
   return (
-    <div className=" py-16 max-w-7xl mx-auto">
+    <div className=" py-32 max-w-7xl mx-auto">
       <h2 className="text-4xl text-center py-5 font-bold">
         Our <span className="text-[#cd2d00]"> Team </span>
       </h2>
@@ -108,7 +108,7 @@ const OurTeam = () => {
             />
             <Button
               onClick={() => openModal(member)}
-              className="mt-2 mx-auto hover:bg-[#cc2c00] flex justify-center items-center"
+              className="mt-5 mx-auto hover:bg-[#cc2c00] flex justify-center items-center"
             >
               Show More
             </Button>

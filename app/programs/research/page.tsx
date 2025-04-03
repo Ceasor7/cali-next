@@ -7,7 +7,7 @@ export default function PublicationPage() {
       titleSpan="Program"
       imageSrc="/programs/research.jpg"
     >
-      <div className="space-y-4">
+      <div className="space-y-5">
         <p>
           At CALI, our research program is committed to fostering evidence-based
           decision-making and deepening the knowledge and understanding of
@@ -17,6 +17,7 @@ export default function PublicationPage() {
           encompasses evaluating the economic, social, and cultural impact of
           creative and cultural events within the industry.
         </p>
+        <hr />
         <p>
           We conduct numerous studies to uncover trends, challenges and
           opportunities in the arts sector aiming to support policymakers,
@@ -27,12 +28,14 @@ export default function PublicationPage() {
           state of the creative arts economy but also paves the way for future
           innovations and advancements in the field.
         </p>
+        <hr />
         <p>
           At CALI, we believe that a thriving creative arts sector is essential
           for cultural enrichment and economic prosperity. Our commitment to
           research excellence ensures that we remain at the forefront of
           understanding and nurturing Kenya&apos;s creative landscape.
         </p>
+        <hr />
       </div>
     </PageLayout>
   );

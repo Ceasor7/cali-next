@@ -57,7 +57,7 @@ const programDescriptions: ProgramDescription[] = [
 
 const OurPrograms = () => {
   return (
-    <div className="px-4 bg-[#1e1e1e] py-16">
+    <div className="px-4 bg-[#1e1e1e] py-32">
       <div>
         <h2 className="text-4xl text-white text-center py-5 font-bold">
           Our <span className="text-[#cd2d00]"> Programs </span>
