@@ -33,7 +33,7 @@ const SiteHeader = () => {
       className={`${
         hideHeader
           ? "-translate-y-full"
-          : "translate-y-0 py-4 dark:bg-transparent"
+          : "translate-y-0 py-6 dark:bg-transparent"
       } fixed top-0 left-0 w-full z-30 transition-transform duration-500 ${
         pathname === "/" ? "bg-[#fef9f5]" : "bg-white shadow-lg dark:bg-accent"
       }`}

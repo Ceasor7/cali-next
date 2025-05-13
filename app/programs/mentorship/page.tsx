@@ -34,7 +34,7 @@ export default function MentorshipPage() {
       titleSpan="Coaching programs "
       imageSrc="/programs/mentorship.jpg"
     >
-      <div className="space-y-4">
+      <div className="space-y-5">
         <p>
           CALI&apos;s mentorship and coaching programs are designed to support
           emerging creative arts leaders by pairing them with experienced
@@ -43,6 +43,7 @@ export default function MentorshipPage() {
           skills, build their professional networks and navigate the unique
           challenges of working in the creative arts sector.
         </p>
+        <hr />
         <p>
           Our mentorship program offers personalized coaching sessions where
           mentors share their expertise, insights and industry knowledge with
@@ -52,6 +53,7 @@ export default function MentorshipPage() {
           seasoned professionals, we create opportunities for meaningful
           exchanges and long-lasting professional relationships.
         </p>
+        <hr />
         <p>
           In addition to skill development, our mentorship programs emphasize
           the importance of networking within the creative arts community.
@@ -60,6 +62,7 @@ export default function MentorshipPage() {
           This exposure helps them to broaden their horizons, gain new
           perspectives and strengthen their professional connections.
         </p>
+        <hr />
         <p>
           At CALI, we believe that mentorship is a vital component of career
           development in the creative arts. Our commitment to nurturing the next
@@ -70,6 +73,7 @@ export default function MentorshipPage() {
           community that benefits from shared knowledge and collaborative
           growth.
         </p>
+        <hr />
       </div>
     </PageLayout>
   );

@@ -34,7 +34,7 @@ export default function PublicationPage() {
       titleSpan=""
       imageSrc="/programs/leadership.jpg"
     >
-      <div className="space-y-4">
+      <div className="space-y-5">
         <p>
           At CALI, we are proud to offer a diverse range of publications
           designed to support the Competency-Based Curriculum (CBC) and promote
@@ -44,6 +44,7 @@ export default function PublicationPage() {
           crafted to enhance learning and foster creativity ensuring that
           students receive a well-rounded education in the creative arts.
         </p>
+        <hr />
         <p>
           In addition to our CBC-focused books, we publish a variety of other
           materials to serve the creative arts community. Our publications
@@ -53,6 +54,7 @@ export default function PublicationPage() {
           platform for sharing knowledge and celebrating the achievements of the
           creative arts sector.
         </p>
+        <hr />
         <p>
           Our resource materials cover a wide range of topics within the
           creative arts providing practical guidance and support for artists and
@@ -60,12 +62,14 @@ export default function PublicationPage() {
           publications are designed to meet the needs of the creative arts
           community and contribute to its growth and development.
         </p>
+        <hr />
         <p>
           At CALI, we are dedicated to advancing the creative arts through
           education and information. Our commitment to high-quality publications
           ensures that we continue to be a trusted source of knowledge and
           inspiration for the creative arts sector in Kenya.
         </p>
+        <hr />
       </div>
     </PageLayout>
   );

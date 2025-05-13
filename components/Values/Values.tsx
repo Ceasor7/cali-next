@@ -18,7 +18,7 @@ const coreDescriptions: CoreDescription[] = [
 
 const Values = () => {
   return (
-    <div className="py-14">
+    <div className=" py-32">
       <h2 className="text-4xl text-center font-bold">
         Core <span className="text-[#cd2d00]"> Values </span>
       </h2>
@@ -37,7 +37,7 @@ const Values = () => {
           ))}
         </div>
         <div>
-          <p className="pt-5 container mx-auto px-4 text-center">
+          <p className=" pt-16 container mx-auto px-4 text-center">
             We strive for excellence in all aspects of our work, encouraging and
             supporting creative thinking and innovation. We promote diversity,
             equity, and inclusion in the arts, creating a welcoming and

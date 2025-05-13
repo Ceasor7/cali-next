@@ -34,7 +34,7 @@ export default function LeadershipPage() {
       titleSpan="Development "
       imageSrc="/programs/leadership.jpg"
     >
-      <div className="space-y-4">
+      <div className="space-y-5">
         <p>
           CALI&apos;s leadership development programs are dedicated to
           empowering both emerging and established creative arts leaders. Our
@@ -46,6 +46,7 @@ export default function LeadershipPage() {
           generation of visionary leaders who can drive innovation and growth in
           the arts community.
         </p>
+        <hr />
         <p>
           Participants in our leadership programs gain access to expert-led
           training sessions that cover a wide range of topics including;
@@ -57,6 +58,7 @@ export default function LeadershipPage() {
           in their current roles but also to become influential advocates for
           the creative arts.
         </p>
+        <hr />
         <p>
           Our commitment to leadership development ensures that the creative
           arts sector in Kenya remains vibrant and resilient with leaders who
@@ -66,6 +68,7 @@ export default function LeadershipPage() {
           nurturing the talents and ambitions of those who will shape its
           future.
         </p>
+        <hr />
       </div>
     </PageLayout>
   );

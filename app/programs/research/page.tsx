@@ -35,13 +35,14 @@ export default function PublicationsPage() {
       titleSpan="Research & Insights"
       imageSrc="/publications/cover.jpg"
     >
-      <div className="space-y-4">
+      <div className="space-y-5">
         <p>
           CALI produces comprehensive research publications, case studies, and
           industry reports that provide valuable insights into Kenya&apos;s
           creative arts sector. Our publications cover critical aspects of
           creative arts management, policy frameworks, and sector trends.
         </p>
+        <hr />
         <p>
           Through rigorous research and analysis, we document best practices,
           challenges, and opportunities within the creative economy. Our
@@ -49,6 +50,7 @@ export default function PublicationsPage() {
           academics, and cultural practitioners seeking data-driven knowledge to
           inform their work.
         </p>
+        <hr />
         <p>
           We collaborate with researchers, arts professionals, and academic
           institutions to produce authoritative content that advances
@@ -63,6 +65,7 @@ export default function PublicationsPage() {
           our findings through workshops, conferences, and digital platforms to
           maximize their impact.
         </p>
+        <hr />
       </div>
     </PageLayout>
   );

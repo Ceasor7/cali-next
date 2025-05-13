@@ -20,12 +20,12 @@ export function PageLayout({
     <div className="font-[family-name:var(--font-montserrat)] max-w-5xl mx-auto px-4 py-8">
       <div className="py-24">
         <ProgramBreadcrumb />
-        <h2 className="text-4xl text-center font-bold pb-10">
+        <h2 className="text-4xl text-center font-bold py-16">
           {title} <span className="text-[#cd2d00]">{titleSpan}</span>
         </h2>
 
         <div className="flex flex-col gap-8 items-center mb-12">
-          <div className="w-full">
+          <div className="w-full py-8">
             <Image
               src={imageSrc}
               alt={title}
@@ -37,7 +37,7 @@ export function PageLayout({
           </div>
           <div className="w-full space-y-4">{children}</div>
         </div>
-        <Button className=" w-full p-8">
+        <Button className=" w-full p-8 text-lg">
           <a href="/contact">Reach us</a>
         </Button>
       </div>
