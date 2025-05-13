@@ -1,37 +1,67 @@
 import { PageLayout } from "../page-layout";
+import type { Metadata } from "next";
 
-export default function PublicationPage() {
+export const metadata: Metadata = {
+  title:
+    "Professional Publications | CALI - Creative Arts Leadership Institute",
+  description:
+    "Access CALI's research publications, case studies, and industry reports on Kenya's creative arts sector for data-driven insights and best practices.",
+  openGraph: {
+    title: "Research Publications on Kenya's Creative Arts Sector | CALI",
+    description:
+      "Explore CALI's collection of professional publications including research papers, case studies, and industry reports on creative arts management in Kenya.",
+    images: [
+      {
+        url: "https://www.cali.institute/publications/cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CALI Publications Cover",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Research Publications on Kenya's Creative Arts Sector | CALI",
+    description:
+      "Data-driven insights and analysis on Kenya's creative arts industry through CALI's professional publications.",
+    images: ["https://www.cali.institute/publications/cover.jpg"],
+  },
+};
+
+export default function PublicationsPage() {
   return (
     <PageLayout
-      title="Research"
-      titleSpan="Program"
-      imageSrc="/programs/research.jpg"
+      title="Publications"
+      titleSpan="Research & Insights"
+      imageSrc="/publications/cover.jpg"
     >
       <div className="space-y-4">
         <p>
-          At CALI, our research program is committed to fostering evidence-based
-          decision-making and deepening the knowledge and understanding of
-          Kenya&apos;s dynamic creative arts sector. Through extensive research,
-          we explore various faces of the creative arts economy in Kenya,
-          providing comprehensive analysis and valuable insights. Our work
-          encompasses evaluating the economic, social, and cultural impact of
-          creative and cultural events within the industry.
+          CALI produces comprehensive research publications, case studies, and
+          industry reports that provide valuable insights into Kenya&apos;s
+          creative arts sector. Our publications cover critical aspects of
+          creative arts management, policy frameworks, and sector trends.
         </p>
         <p>
-          We conduct numerous studies to uncover trends, challenges and
-          opportunities in the arts sector aiming to support policymakers,
-          artists and stakeholders with accurate data. By highlighting the value
-          and potential of creative and cultural activities, we strive to
-          contribute to the sustainable growth and development of the arts
-          community in Kenya. Our research not only sheds light on the current
-          state of the creative arts economy but also paves the way for future
-          innovations and advancements in the field.
+          Through rigorous research and analysis, we document best practices,
+          challenges, and opportunities within the creative economy. Our
+          publications serve as essential resources for artists, policymakers,
+          academics, and cultural practitioners seeking data-driven knowledge to
+          inform their work.
         </p>
         <p>
-          At CALI, we believe that a thriving creative arts sector is essential
-          for cultural enrichment and economic prosperity. Our commitment to
-          research excellence ensures that we remain at the forefront of
-          understanding and nurturing Kenya&apos;s creative landscape.
+          We collaborate with researchers, arts professionals, and academic
+          institutions to produce authoritative content that advances
+          understanding of Kenya&apos;s creative sector. Our publications are
+          designed to stimulate dialogue, influence policy, and support
+          evidence-based decision making in the arts.
+        </p>
+        <p>
+          CALI&apos;s publications are available to arts organizations,
+          educational institutions, and individual practitioners committed to
+          professional development and sector growth. We regularly disseminate
+          our findings through workshops, conferences, and digital platforms to
+          maximize their impact.
         </p>
       </div>
     </PageLayout>

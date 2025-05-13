@@ -1,6 +1,33 @@
 import { PageLayout } from "../page-layout";
+import type { Metadata } from "next";
 
-export default function PublicationPage() {
+export const metadata: Metadata = {
+  title: "Training Workshops | CALI - Creative Arts Leadership Institute",
+  description:
+    "CALI's professional training workshops in creative arts management, fundraising, and marketing to enhance your skills in Kenya's arts sector.",
+  openGraph: {
+    title: "CALI Training Workshops for Creative Arts Professionals",
+    description:
+      "Join CALI's hands-on workshops and masterclasses to build essential skills in arts management, fundraising, marketing, and audience development in Kenya's creative sector.",
+    images: [
+      {
+        url: "https://www.cali.institute/programs/training.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CALI Training Workshop",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CALI Training Workshops for Creative Arts Professionals",
+    description:
+      "Enhance your creative arts management skills with CALI's professional training workshops in Kenya.",
+    images: ["https://www.cali.institute/programs/training.jpg"],
+  },
+};
+
+export default function TrainingPage() {
   return (
     <PageLayout
       title="Training"

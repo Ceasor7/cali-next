@@ -1,4 +1,31 @@
 import { PageLayout } from "../page-layout";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Creative Arts Leadership Development | CALI Institute",
+  description:
+    "CALI empowers creative arts leaders in Kenya through skill-building workshops, networking, and professional development programs.",
+  openGraph: {
+    title: "Leadership Programs for Arts Professionals | CALI Kenya",
+    description:
+      "Developing visionary leaders for Kenya's creative arts sector through CALI's leadership development initiatives.",
+    images: [
+      {
+        url: "https://www.cali.institute/programs/leadership.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CALI Leadership Program",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leadership Programs for Arts Professionals | CALI Kenya",
+    description:
+      "Empowering the next generation of creative arts leaders in Kenya through professional development.",
+    images: ["https://www.cali.institute/programs/leadership.jpg"],
+  },
+};
 
 export default function LeadershipPage() {
   return (

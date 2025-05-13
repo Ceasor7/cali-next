@@ -1,4 +1,31 @@
 import { PageLayout } from "../page-layout";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Arts Mentorship Programs | CALI - Creative Arts Leadership Institute",
+  description:
+    "CALI's mentorship and coaching programs connect emerging creative arts leaders with experienced professionals in Kenya's arts sector.",
+  openGraph: {
+    title: "Creative Arts Mentorship Programs | CALI Kenya",
+    description:
+      "One-on-one guidance and professional development for emerging arts leaders through CALI's mentorship initiatives.",
+    images: [
+      {
+        url: "https://www.cali.institute/programs/mentorship.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CALI Mentorship Program",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Creative Arts Mentorship Programs | CALI Kenya",
+    description:
+      "Developing Kenya's next generation of creative arts leaders through personalized mentorship.",
+    images: ["https://www.cali.institute/programs/mentorship.jpg"],
+  },
+};
 
 export default function MentorshipPage() {
   return (

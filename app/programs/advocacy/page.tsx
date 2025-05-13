@@ -1,4 +1,31 @@
 import { PageLayout } from "../page-layout";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Creative Arts Advocacy | CALI Institute Kenya",
+  description:
+    "CALI champions Kenya's creative arts sector through policy advocacy, public awareness campaigns, and cross-sector partnerships.",
+  openGraph: {
+    title: "Advocacy for Kenya's Creative Arts Sector | CALI",
+    description:
+      "CALI's initiatives to promote policy changes, funding, and public support for Kenya's creative arts community.",
+    images: [
+      {
+        url: "https://www.cali.institute/programs/advocacy.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CALI Advocacy Program",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Advocacy for Kenya's Creative Arts Sector | CALI",
+    description:
+      "Promoting policy changes and public support for Kenya's vibrant creative arts community.",
+    images: ["https://www.cali.institute/programs/advocacy.jpg"],
+  },
+};
 
 export default function AdvocacyPage() {
   return (
